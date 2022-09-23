@@ -14,7 +14,56 @@ body {
 
 #search-box {
   font: inherit;
-  padding: 8px;
+  padding: 10px;
   max-width: 320px;
   margin-bottom: 16px;
+  font-size: 25px;
+  border: 2px solid black;
+}
+#search-box::placeholder {
+  font-size: 18px;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  
+}
+.country-card {
+  display: inline-block;
+  padding: 50px;
+  border: 1px solid #eeeeee;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.country-card--header {
+  display: flex;
+  align-items: center;
+}
+.country-card--name {
+  margin: 0;
+  padding: 0;
+  font-size: 40px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+.country-card--field {
+  font-weight: bold;
+}
+.country-list--item {
+  display: flex;
+  align-items: center;
+  
+}
+.country-list--item:not(:last-child) {
+  margin-bottom: 5px;
+}
+.country-list--name {
+  font-weight: 500;
+  margin-left: 10px;
+
+}
+.country-value {
+  font-weight: normal;
+  font-size: 20px;
 }
